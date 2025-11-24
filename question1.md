@@ -145,7 +145,7 @@ void loop() {
 ![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/qi1.png)
 > This image represents the blinking of led in sequence as per the problem statement
 
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+- [Simulate NOW](https://wokwi.com/projects/448506343818702849)
   
 ###  Part-B: Adding Push Button Toggle
 
@@ -390,9 +390,9 @@ void loop() {
 
 ![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/q1b.png)
 > This image represents the led is blinking in normal order with push button pressed the press is detected using buildin led
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+
 
 ![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/q1b2.png)
 > This image represents the led is blinking in reverse order with no push button pressed.
 
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+- [Simulate NOW](https://wokwi.com/projects/448507227912112129)
