@@ -11,7 +11,7 @@ This repository contains three embedded battery-centric engineering tasks involv
 
 | Question | Problem Statement | Explanation | Simulation |
 |----------|------------------|-------------|-------------|
-| **Q1** | Blink LED on Raspberry Pi Pico exactly **10, 20, 30 times per minute**, with button-latch toggle | [View Explanation](./question1.md) | *(Add link)* |
+| **Q1** | Blink LED on Raspberry Pi Pico exactly **10, 20, 30 times per minute**, with button-latch toggle | [View Explanation](./question1.md) | [wokwi 2](https://wokwi.com/projects/448507227912112129) [wokwi 1](https://wokwi.com/projects/448506343818702849) |
 | **Q2** | Level shift **0–3.3V PWM** to **±1.65 V**, then convert back to **0–3.3 V** using only RC circuits | [View Explanation](./question2.md) | [multisim](https://github.com/ShravanaHS/assignment/blob/main/multisin_2_simulation.ms14) |
 | **Q3** | Compare **two battery pack topologies** and relate their effects on **BMS balancing and safety** | [View Explanation](./question3.md) | N/A |
 
@@ -31,14 +31,14 @@ This repository contains three embedded battery-centric engineering tasks involv
 #### 🔵 Button Press Detected (Latch ON)
 <img src="./images/q1b.png" width="4500px"/>
 
-🔗 *Simulation:* *(Add Link)*
+🔗 *Simulation:* *(https://wokwi.com/projects/448507227912112129)*
 
 ---
 
 #### 🔻 Reverse Pattern 30 → 20 → 10
 <img src="./images/q1b2.png" width="4500px"/>
 
-🔗 *Simulation:* *(Add Link)*
+🔗 *Simulation:* *(https://wokwi.com/projects/448507227912112129)*
 
 ---
 
