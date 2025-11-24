@@ -184,11 +184,11 @@ $$
 
 ✨ So the output is a **−1.65 V to +1.65 V square wave centered at 0 V**.
 
-Insert your CRO Stage-1 Screenshot below:
 
 <!-- Stage-1 waveform image -->
-`![Stage-1 waveform](path/to/stage1_waveform.png)`
+![Simulation Result](https://github.com/ShravanaHS/Register-Level-Programming-With-Arduino-UNO/blob/main/images/Screenshot%202025-10-20%20222104.png)
 
+- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
 ---
 
 ### 🧩 Stage-2: −1.65…+1.65 V → 0…3.3 V (AC + DC Bias Shift)
@@ -269,10 +269,10 @@ flowchart LR
 ```
 
 
-Insert your Stage-2 Multisim circuit screenshot:
-
 <!-- Stage-2 circuit image -->
-`![Stage-2 CR + bias network](path/to/stage2.png)`
+![Simulation Result](https://github.com/ShravanaHS/Register-Level-Programming-With-Arduino-UNO/blob/main/images/Screenshot%202025-10-20%20222104.png)
+
+- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
 
 ---
 
@@ -293,8 +293,9 @@ So:
 
 ✔ Final Output = **0–3.3 V square wave**, i.e., same logic level as original GPIO.
 
-Insert your Stage-2 CRO screenshot:
 
 <!-- Stage-2 waveform image -->
-`![Stage-2 waveform](path/to/stage2_waveform.png)`
+![Simulation Result](https://github.com/ShravanaHS/Register-Level-Programming-With-Arduino-UNO/blob/main/images/Screenshot%202025-10-20%20222104.png)
+
+- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
 
