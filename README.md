@@ -1,82 +1,104 @@
-# ThinkClock Battery R&D Assignment
+# 🔋 ThinkClock Battery R&D Assignment
 
-This repository contains three battery–embedded engineering tasks involving:
-- Raspberry Pi Pico signal control
-- PWM level shifting using analog circuits
-- Battery pack topology analysis from a BMS perspective
+This repository contains three embedded battery-centric engineering tasks involving:
+- **Raspberry Pi Pico LED sequencing with latch logic**
+- **Passive PWM level shifting using RC networks**
+- **Battery pack topology comparison with BMS impact**
 
 ---
 
 ## 📌 Summary Table
 
-| Question | Problem Statement | Theory / Concept | Simulation Link |
-|----------|------------------|-----------------|-----------------|
-| **Q1** | Blink LED on Raspberry Pi Pico exactly **10, 20, 30 times per minute** and toggle sequence using button latch | [Explanation](https://github.com/ShravanaHS/assignment/blob/main/question1.md) | [sim1]() |
-| **Q2** | Shift **0–3.3V PWM** to **±1.65V**, then level shift back to 0–3.3V using passive RC circuits |  [Explanation](https://github.com/ShravanaHS/assignment/blob/main/question2.md) |  |
-| **Q3** | Compare two **battery pack topologies** and relate to **BMS** requirements |  [Explanation](https://github.com/ShravanaHS/assignment/blob/main/question3.md) |  |
+| Question | Problem Statement | Explanation | Simulation |
+|----------|------------------|-------------|-------------|
+| **Q1** | Blink LED on Raspberry Pi Pico exactly **10, 20, 30 times per minute**, with button-latch toggle | [View Explanation](./question1.md) | *(Add link)* |
+| **Q2** | Level shift **0–3.3V PWM** to **±1.65 V**, then convert back to **0–3.3 V** using only RC circuits | [View Explanation](./question2.md) | *(Add link)* |
+| **Q3** | Compare **two battery pack topologies** and relate their effects on **BMS balancing and safety** | [View Explanation](./question3.md) | N/A |
 
 ---
-###exp1
 
-![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/qi1.png)
-> This image represents the blinking of led in sequence as per the problem statement
+## 🔷 Q1 – LED Pattern with Toggle (Raspberry Pi Pico)
 
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
-![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/q1b.png)
-> This image represents the led is blinking in normal order with push button pressed the press is detected using buildin led
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+> Figures demonstrate LED blinking sequence and latch-based mode reversal.
 
-![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/q1b2.png)
-> This image represents the led is blinking in reverse order with no push button pressed.
+#### 🟢 Normal 10 → 20 → 30 Blinking
+<img src="./images/qi1.png" width="450px"/>
 
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+🔗 *Simulation:* *(Add Link)*
 
-### exp2
-![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage1sch.png)
-> This image shows the schematic of level shifter which shifts 0-3.3v logic to -1.65 to 1.65V logic
+---
 
-![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage1wa.png)
-> This image shows the waveform of level shifter which shifts 0-3.3v logic to -1.65 to 1.65V logic
+#### 🔵 Button Press Detected (Latch ON)
+<img src="./images/q1b.png" width="450px"/>
 
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+🔗 *Simulation:* *(Add Link)*
 
-![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage2sch.png)
-> This image shows the schematic of stage 2 level shifter which shifts -1.65 to 1.65V logic generated in 1st stage to  0 - 3.3v logic
+---
 
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+#### 🔻 Reverse Pattern 30 → 20 → 10
+<img src="./images/q1b2.png" width="450px"/>
 
-![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage2wa.png)
-> This image shows the output waveform of stage 2 level shifter which shifts -1.65 to 1.65V logic generated in 1st stage to  0 - 3.3v logic
+🔗 *Simulation:* *(Add Link)*
 
-![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage2wave.png)
-> This image shows the output waveform of stage 2 level shifter which shifts -1.65 to 1.65V logic generated in 1st stage to  0 - 3.3v logic
+---
 
+## 🔷 Q2 – PWM Passive Level Shifting (RC Networks)
 
-### 🧠 Key Highlights
+### 🟡 Stage-1: 0–3.3 V → −1.65 to +1.65 V (High-Pass)
+
+**Schematic**
+<br>
+<img src="./images/stage1sch.png" width="450px"/>
+
+**Waveform**
+<br>
+<img src="./images/stage1wa.png" width="450px"/>
+
+🔗 *Simulation:* *(Add Link)*
+
+---
+
+### 🔵 Stage-2: Re-Center to 0–3.3V Using DC Bias
+
+**Schematic**
+<br>
+<img src="./images/stage2sch.png" width="450px"/>
+
+**Waveform**
+<br>
+<img src="./images/stage2wa.png" width="450px"/>
+
+🔗 *Simulation:* *(Add Link)*
+
+---
+
+📝 **Final Output Comparison**
+<br>
+<img src="./images/stage2wave.png" width="450px"/>
+
+---
+
+## 🧠 Key Highlights
 
 | Feature | Explanation |
 |---------|-------------|
-| **Latch-based control** | Prevents mode change during active timing cycle (used in measurement systems) |
-| **Passive level shifting** | Uses capacitive coupling + resistive biasing, low-cost approach |
-| **Pack topology impact** | Influences BMS balancing complexity and fault tolerance |
+| **Latch-based control** | Mode changes only after the ongoing timing window ends (common in test instruments). |
+| **Passive level shifting** | Uses AC coupling + DC biasing without op-amps; very cost-effective. |
+| **Pack topology & BMS** | Topology impacts BMS balancing complexity, fault isolation, and safety. |
 
 ---
 
-### 🛠️ Tools Used
-- Multisim / LTspice (Analog PWM shifting)
-- Markdown + Mermaid diagrams (Documentation)
-- Wokwi (simulation)
+## 🛠️ Tools Used
+- **Raspberry Pi Pico (C/C++)**
+- **Multisim / LTSpice (Analog simulation)**
+- **Wokwi (Digital simulation)**
+- **Markdown + Mermaid (Documentation)**
 
 ---
 
-
-
----
-
-### 👨‍🔬 Author
-**Shravana H S** 
--shravanahs97@gmail.com
+### 👨‍🔬 Author  
+**Shravana H S**  
+📧 *shravanahs97@gmail.com*
 
 ---
-
 
