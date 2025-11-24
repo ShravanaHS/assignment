@@ -192,7 +192,7 @@ $$
 ![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage1wa.png)
 > This image shows the waveform of level shifter which shifts 0-3.3v logic to -1.65 to 1.65V logic
 
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+- [Simulate NOW](https://github.com/ShravanaHS/assignment/blob/main/multisin_2_simulation.ms14)
 ---
 
 ### 🧩 Stage-2: −1.65…+1.65 V → 0…3.3 V (AC + DC Bias Shift)
@@ -276,7 +276,7 @@ flowchart LR
 ![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage2sch.png)
 > This image shows the schematic of stage 2 level shifter which shifts -1.65 to 1.65V logic generated in 1st stage to  0 - 3.3v logic
 
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+- [Simulate NOW](https://github.com/ShravanaHS/assignment/blob/main/multisin_2_simulation.ms14)
 ---
 
 ---
