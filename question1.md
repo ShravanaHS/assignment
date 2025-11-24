@@ -139,6 +139,13 @@ void loop() {
   blinkMinute(30);
 }
 ```
+
+### Results
+
+![Simulation Result](https://github.com/ShravanaHS/Register-Level-Programming-With-Arduino-UNO/blob/main/images/Screenshot%202025-10-20%20222104.png)
+
+- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+  
 ###  Part-B: Adding Push Button Toggle
 
 ---
@@ -380,4 +387,10 @@ void loop() {
 ```
 
 
-```
+![Simulation Result](https://github.com/ShravanaHS/Register-Level-Programming-With-Arduino-UNO/blob/main/images/Screenshot%202025-10-20%20222104.png)
+
+- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+
+![Simulation Result](https://github.com/ShravanaHS/Register-Level-Programming-With-Arduino-UNO/blob/main/images/Screenshot%202025-10-20%20222104.png)
+
+- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
