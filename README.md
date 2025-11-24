@@ -12,7 +12,7 @@ This repository contains three embedded battery-centric engineering tasks involv
 | Question | Problem Statement | Explanation | Simulation |
 |----------|------------------|-------------|-------------|
 | **Q1** | Blink LED on Raspberry Pi Pico exactly **10, 20, 30 times per minute**, with button-latch toggle | [View Explanation](./question1.md) | *(Add link)* |
-| **Q2** | Level shift **0–3.3V PWM** to **±1.65 V**, then convert back to **0–3.3 V** using only RC circuits | [View Explanation](./question2.md) | *(Add link)* |
+| **Q2** | Level shift **0–3.3V PWM** to **±1.65 V**, then convert back to **0–3.3 V** using only RC circuits | [View Explanation](./question2.md) | [multisim](https://github.com/ShravanaHS/assignment/blob/main/multisin_2_simulation.ms14) |
 | **Q3** | Compare **two battery pack topologies** and relate their effects on **BMS balancing and safety** | [View Explanation](./question3.md) | N/A |
 
 ---
@@ -54,7 +54,7 @@ This repository contains three embedded battery-centric engineering tasks involv
 <br>
 <img src="./images/stage1wa.png" width="4500px"/>
 
-🔗 *Simulation:* *(Add Link)*
+🔗 *Simulation:* *(https://github.com/ShravanaHS/assignment/blob/main/multisin_2_simulation.ms14)*
 
 ---
 
@@ -68,7 +68,7 @@ This repository contains three embedded battery-centric engineering tasks involv
 <br>
 <img src="./images/stage2wa.png" width="4500px"/>
 
-🔗 *Simulation:* *(Add Link)*
+🔗 *Simulation:* *(https://github.com/ShravanaHS/assignment/blob/main/multisin_2_simulation.ms14)*
 
 ---
 
