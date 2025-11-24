@@ -186,7 +186,11 @@ $$
 
 
 <!-- Stage-1 waveform image -->
-![Simulation Result](https://github.com/ShravanaHS/Register-Level-Programming-With-Arduino-UNO/blob/main/images/Screenshot%202025-10-20%20222104.png)
+![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage1sch.png)
+> This image shows the schematic of level shifter which shifts 0-3.3v logic to -1.65 to 1.65V logic
+
+![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage1wa.png)
+> This image shows the waveform of level shifter which shifts 0-3.3v logic to -1.65 to 1.65V logic
 
 - [Simulate NOW](https://wokwi.com/projects/445351244852802561)
 ---
@@ -268,11 +272,12 @@ flowchart LR
     R4 --> VOUT
 ```
 
-
-<!-- Stage-2 circuit image -->
-![Simulation Result](https://github.com/ShravanaHS/Register-Level-Programming-With-Arduino-UNO/blob/main/images/Screenshot%202025-10-20%20222104.png)
+<!-- Stage-1 waveform image -->
+![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage2sch.png)
+> This image shows the schematic of stage 2 level shifter which shifts -1.65 to 1.65V logic generated in 1st stage to  0 - 3.3v logic
 
 - [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+---
 
 ---
 
@@ -294,8 +299,11 @@ So:
 ✔ Final Output = **0–3.3 V square wave**, i.e., same logic level as original GPIO.
 
 
-<!-- Stage-2 waveform image -->
-![Simulation Result](https://github.com/ShravanaHS/Register-Level-Programming-With-Arduino-UNO/blob/main/images/Screenshot%202025-10-20%20222104.png)
+![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage2wa.png)
+> This image shows the output waveform of stage 2 level shifter which shifts -1.65 to 1.65V logic generated in 1st stage to  0 - 3.3v logic
 
-- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
+![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/stage2wave.png)
+> This image shows the output waveform of stage 2 level shifter which shifts -1.65 to 1.65V logic generated in 1st stage to  0 - 3.3v logic
+
+---
 
