@@ -22,21 +22,21 @@ This repository contains three embedded battery-centric engineering tasks involv
 > Figures demonstrate LED blinking sequence and latch-based mode reversal.
 
 #### 🟢 Normal 10 → 20 → 30 Blinking
-<img src="./images/qi1.png" width="450px"/>
+<img src="./images/qi1.png" width="4500px"/>
 
 🔗 *Simulation:* *(Add Link)*
 
 ---
 
 #### 🔵 Button Press Detected (Latch ON)
-<img src="./images/q1b.png" width="450px"/>
+<img src="./images/q1b.png" width="4500px"/>
 
 🔗 *Simulation:* *(Add Link)*
 
 ---
 
 #### 🔻 Reverse Pattern 30 → 20 → 10
-<img src="./images/q1b2.png" width="450px"/>
+<img src="./images/q1b2.png" width="4500px"/>
 
 🔗 *Simulation:* *(Add Link)*
 
@@ -48,11 +48,11 @@ This repository contains three embedded battery-centric engineering tasks involv
 
 **Schematic**
 <br>
-<img src="./images/stage1sch.png" width="450px"/>
+<img src="./images/stage1sch.png" width="4500px"/>
 
 **Waveform**
 <br>
-<img src="./images/stage1wa.png" width="450px"/>
+<img src="./images/stage1wa.png" width="4500px"/>
 
 🔗 *Simulation:* *(Add Link)*
 
@@ -62,11 +62,11 @@ This repository contains three embedded battery-centric engineering tasks involv
 
 **Schematic**
 <br>
-<img src="./images/stage2sch.png" width="450px"/>
+<img src="./images/stage2sch.png" width="4500px"/>
 
 **Waveform**
 <br>
-<img src="./images/stage2wa.png" width="450px"/>
+<img src="./images/stage2wa.png" width="4500px"/>
 
 🔗 *Simulation:* *(Add Link)*
 
@@ -74,7 +74,7 @@ This repository contains three embedded battery-centric engineering tasks involv
 
 📝 **Final Output Comparison**
 <br>
-<img src="./images/stage2wave.png" width="450px"/>
+<img src="./images/stage2wave.png" width="4500px"/>
 
 ---
 
