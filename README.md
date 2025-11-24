@@ -24,8 +24,7 @@ This repository contains three embedded battery-centric engineering tasks involv
 #### 🟢 Normal 10 → 20 → 30 Blinking
 <img src="./images/qi1.png" width="4500px"/>
 
-🔗 *Simulation:* *(Add Link)*
-
+🔗 *Simulation:* https://wokwi.com/projects/448506343818702849
 ---
 
 #### 🔵 Button Press Detected (Latch ON)
