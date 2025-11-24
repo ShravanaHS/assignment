@@ -11,9 +11,9 @@ This repository contains three battery–embedded engineering tasks involving:
 
 | Question | Problem Statement | Theory / Concept | Simulation Link |
 |----------|------------------|-----------------|-----------------|
-| **Q1** | Blink LED on Raspberry Pi Pico exactly **10, 20, 30 times per minute** and toggle sequence using button latch |  |  |
-| **Q2** | Shift **0–3.3V PWM** to **±1.65V**, then level shift back to 0–3.3V using passive RC circuits |  |  |
-| **Q3** | Compare two **battery pack topologies** and relate to **BMS** requirements |  |  |
+| **Q1** | Blink LED on Raspberry Pi Pico exactly **10, 20, 30 times per minute** and toggle sequence using button latch | [Explanation](https://github.com/ShravanaHS/assignment/blob/main/question1.md) | [sim1]() |
+| **Q2** | Shift **0–3.3V PWM** to **±1.65V**, then level shift back to 0–3.3V using passive RC circuits |  [Explanation](https://github.com/ShravanaHS/assignment/blob/main/question2.md) |  |
+| **Q3** | Compare two **battery pack topologies** and relate to **BMS** requirements |  [Explanation](https://github.com/ShravanaHS/assignment/blob/main/question3.md) |  |
 
 ---
 
