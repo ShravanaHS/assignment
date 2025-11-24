@@ -16,7 +16,14 @@ This repository contains three battery–embedded engineering tasks involving:
 | **Q3** | Compare two **battery pack topologies** and relate to **BMS** requirements |  [Explanation](https://github.com/ShravanaHS/assignment/blob/main/question3.md) |  |
 
 ---
+![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/q1b.png)
+> This image represents the led is blinking in normal order with push button pressed the press is detected using buildin led
+- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
 
+![Simulation Result](https://github.com/ShravanaHS/assignment/blob/main/images/q1b2.png)
+> This image represents the led is blinking in reverse order with no push button pressed.
+
+- [Simulate NOW](https://wokwi.com/projects/445351244852802561)
 ### 🧠 Key Highlights
 
 | Feature | Explanation |
