@@ -320,37 +320,11 @@ LOOP FOREVER:
 
 END LOOP
 ```
+
 - The `checkButton()` runs inside the blink loop, so we do NOT need to hold the button.
 - Button reading is based on pull-up ⇒ PRESSED = LOW.
 - Latch ensures mode change only after a complete timing cycle (3 minutes).
 - `indicatorLED` is optional for debug or user feedback.
-
-// ========================================================
-//  Q1-B: LED Blinking + Latching Toggle Button (Pico, Arduino)
-// ========================================================
-//  LED Pattern: 10 → 20 → 30  (Normal Mode)
-//  Toggle to:   30 → 20 → 10  (Reverse Mode)
-//  Toggle applies ONLY after full 3-minute cycle.
-// ========================================================
-
-#define LED_PIN        15   // External LED
-#define BUTTON_PIN     14   // Push Button (Input Pull-Up)
-#define INDICATOR_LED  25   // Onboard LED (Latch Indicator)
-
-bool reverseMode = false;   // Current mode (Normal = false)
-bool latchedPress = false;  // Remembers button press
-
-// --------------------------------------------------------
-//  FUNCTION: checkButton()
-//  Purpose : Detect press and store request (Latch)
-//  NOTE    : LOW = pressed (because of internal pull-up)
-// --------------------------------------------------------
-void checkButton() {
-  if (digitalRead(BUTTON_PIN) == LOW) {
-    latchedPress = true;
-    digitalWrite(INDICATOR_LED, HIGH); // Show request stored
-  }
-}
 
 ### Complete code
 ```c
