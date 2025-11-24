@@ -17,10 +17,10 @@ The diagrams below show **two possible topologies** that produce the same voltag
 ### 📍 Basic Background: How Packs are Built
 
 | Connection | What increases? | Formula |
-|------------|-----------------|---------|
-| **Series (S)** | Voltage | \(V_{\text{pack}} = N_S \times V_{\text{cell}}\) |
-| **Parallel (P)** | Capacity (Ah) | \(C_{\text{pack}} = N_P \times C_{\text{cell}}\) |
-| **Energy** | Depends on both | \(E = V \times C\) |
+| :--- | :--- | :--- |
+| **Series (S)** | Voltage ($V$) | $V_{pack} = N_S \times V_{cell}$ |
+| **Parallel (P)** | Capacity ($Ah$) | $C_{pack} = N_P \times C_{cell}$ |
+| **Energy** | Total Power ($Wh$) | $E_{pack} = V_{pack} \times C_{pack}$ |
 
 Example: A Lithium-ion cell ~3.7 V, 2500 mAh  
 → 3S3P pack = 11.1 V, 7500 mAh
@@ -67,11 +67,12 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    %% Terminals / Taps
-    PosNode((+ Node / Tap))
-    NegNode((- Node / Tap))
 
-    %% Cells
+    %% Terminals / Taps
+    PosNode([Positive Node])
+    NegNode([Negative Node])
+
+    %% Cells in Series (S)
     Cell1[S cell]
     Cell2[S cell]
     Cell3[S cell]
@@ -84,6 +85,7 @@ flowchart LR
     Cell1 --- NegNode
     Cell2 --- NegNode
     Cell3 --- NegNode
+
 ```
 
 📌 Cells are **first placed in series**, and **parallel bridging occurs at multiple nodes**.  
@@ -123,7 +125,7 @@ A **Battery Management System (BMS)** must:
 
 ---
 
-### 🧠 Summary (For Interview/Exam)
+### 🧠 Summary 
 
 > Both topologies deliver same voltage and capacity, but differ in how cells share current and how BMS must balance them.  
 > Topology-1 makes parallel groups first, leading to **simpler BMS and safer balancing at low cost**, ideal for small packs (power banks, tools).  
